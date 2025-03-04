@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './portfolio.css'; // Import the CSS file
+import './portfolio.css'; 
 
-const App = () => {
+const App3= () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -18,16 +18,11 @@ const App = () => {
   return (
     <div className="app">
       {/* Header */}
-      <header>
-        <h1>My Portfolio</h1>
-      </header>
+     
 
       <div className="main-content">
         {/* Aside */}
-        <aside>
-          <h3>About Me</h3>
-          <p>This is where you can add information about yourself, your career, and your skills.</p>
-        </aside>
+        
 
         {/* Main content - Contact Form */}
         <main className="main-section">
@@ -53,11 +48,7 @@ const App = () => {
             </div>
             <div className="input-group">
               <label>Message:</label>
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-              />
+              <textarea value={message} onChange={(e) => setMessage(e.target.value)} required/>
             </div>
             <button type="submit">Submit</button>
           </form>
@@ -73,7 +64,7 @@ const App = () => {
         </main>
       </div>
 
-      {/* Footer */}
+   
       <footer>
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
       </footer>
@@ -81,4 +72,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App3;
